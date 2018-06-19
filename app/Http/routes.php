@@ -11,6 +11,7 @@
 |
 */
 
+/*
 Route::get('/', 'WelcomeController@index');
 
 Route::get('home', 'HomeController@index');
@@ -19,3 +20,8 @@ Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',
 ]);
+*/
+
+Route::resource('personas','PersonaController');
+//->only('store', 'index', 'show', 'update')
+//->except('destroy', 'create', 'edit')
