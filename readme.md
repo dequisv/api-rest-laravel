@@ -40,8 +40,8 @@ Los principales directorios que se crean en Laravel los puedes consultar en la [
 * Visual Studio Code
 
 ## Instalación
-1. Instalar XAMPP
-2. Instalar Composer
+1. Instalar [XAMPP](https://www.apachefriends.org/es/index.html)/[WAMP](http://www.wampserver.es/)
+2. Instalar [Composer](https://getcomposer.org/download/)
 
 ### Sobre Composer
 Composer es una herramienta para administración de dependencias en PHP, permite declarar las librerías de las cuáles el proyecto depende o necesita y éste las instala en el proyecto.
@@ -73,6 +73,7 @@ Modificar archivo httpd-vhost.conf
 1. Crear proyecto
 ```
 composer create-project laravel/laravel=5.0 api-rest
+##
 ```
 2. Crear modelo Persona
 ``` php
@@ -83,7 +84,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Persona extends Model{
     protected $table="personas";
-    protected $fillable=array("dui","nombre, apellido, fechaNacimiento");
+    protected $fillable=array("dui","nombre", "apellido", "fechaNacimiento");
 }
 ```
 
@@ -255,7 +256,7 @@ composer search faker
 composer require fzaninotto/faker --dev
 ```
 
-5. Actualizar información del cargador automático de clases 
+5. Actualizar información del cargador automático
 ```
 composer dump-autoload
 ```
@@ -281,7 +282,7 @@ php artisan make:test PersonasModuleTest
 
 ## Referencias
 
-Documentación oficial de laravel [Laravel framework](http://laravel.com/docs).
+Documentación oficial de [Laravel framework](http://laravel.com/docs).
 
 [Estandares de interoperabilidad de gobierno de El Salvador](https://github.com/dequisv/Estandares-Interoperabilidad)
 
