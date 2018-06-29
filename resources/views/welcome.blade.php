@@ -38,8 +38,8 @@
 	<body>
 		<div class="container">
 			<div class="content">
-				<div class="title">Laravel 5</div>
-				<div class="quote">{{ Inspiring::quote() }}</div>
+				<div class="title">Taller Servicios Web con Laravel</div>
+				<div><a href="consumopersonas">Consumo de SW</a></div>
 			</div>
 		</div>
 	</body>
