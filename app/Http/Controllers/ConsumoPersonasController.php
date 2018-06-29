@@ -27,6 +27,11 @@ class ConsumoPersonasController extends Controller {
 		return view('personas.show', compact('datos'));
 	}
 
+	public function create()
+	{
+		return view('personas.create');
+	}
+
 	public function store()
 	{
 		//
